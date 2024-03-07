@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- website creator -->
+    <meta name="author" content="Rafael Santos">
+    <meta name="dcterms.created" content="2024-03-06">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Encriptador de Texto Online - Criptografe suas Mensagens" />
+    <meta property="og:description" content="Criptografe suas mensagens e textos online com nosso Encriptador de Texto seguro e gratuito. Proteja sua privacidade e confidencialidade com facilidade." />
+    <meta property="og:image" content="./img/padlock.png" />
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Encriptador de Texto" />
+
+    <!-- Search Engine Optimization -->
+    <meta name="distribution" content="global">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Encriptador de texto, proteja seus textos com nosso encriptador online! Utilize algoritmos avançados como AES e RSA para garantir a confidencialidade de suas informações. Personalize suas configurações e descriptografe facilmente seus textos quando necessário.">
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/mediaQuery.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <canvas id="canvas" class="background-animation"></canvas>
+    
+    <header>
+        <img src="./img/logo.svg" alt="Logo Alura"  class="logo">
+    </header>
+
+    <main>
+        <section class="encryptor-container">
+            <textarea class="input" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="encryptor-container__alert">
+                <img src="./img/alert.svg" alt="icone de alerta" class="alert-image">
+                <p  class="text-alert">Apenas letras minúsculas sem acento!</p>
+            </div>
+            <div class="encryptor-container__buttons">
+                <button type="submit" class="encrypt-button">Criptografar</button>
+                <button type="submit" class="decrypt-button">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="result-container">
+            <div class="result-container__content">
+                <img src="./img/rafaMan.jpg" alt="Imagem do Rafa" class="rafaMan">
+                <p  class="first-text">Nenhuma mensagem encontrada</p>
+                <p  class="second-text">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <textarea type="message" class="output-message" readonly></textarea>
+            <button type="submit" class="copy-button">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <p  class="footer-text">2024 - Encriptador de Texto - Feito por Rafael Santos</p>
+        <a href="https://www.linkedin.com/in/raafaelsantos/" target="_blank">
+            <img src="./img/linkedin.svg" alt="Logo Linkedin" class="linkedin">
+        </a>
+        <a href="https://github.com/RafaelSanntos" target="_blank">
+            <img src="./img/github.svg" alt="Logo GitHub" class="github">
+        </a>
+    </footer>
+
+    <script src="./javaScript/backgroundAnimation.js"></script>
+    <script src="./javaScript/script.js"></script>
+</body>
+</html>

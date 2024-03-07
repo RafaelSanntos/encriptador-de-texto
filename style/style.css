@@ -1,0 +1,339 @@
+/*importando a fonte Inter - Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Global CSS */
+
+:root{
+    --green:#319854;
+    --white:#FFFFFF;
+    --dark-green:#1d5f33;
+    --greey:#2d2d2deb;
+    --RGBA-buttons:rgba(255, 255, 255, 0.171);
+    --dark-green:#319854;
+    --gray:#343a40;
+    --black:#000000d6
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', 'sans-serif';
+    text-decoration: none;
+    z-index: 2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: black;
+}
+  
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+    z-index: 2;
+}
+
+header .logo{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1; 
+}
+
+.encryptor-container{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+}
+
+.input{
+    width: 660px;
+    height: 288px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--dark-green);
+    border-radius: 15px;
+    resize: none;
+    background: var(--black);
+    color: var(--dark-green);
+}
+
+.input::placeholder,:focus{
+    color: var(--green);
+}
+
+.output-message::-webkit-scrollbar,
+.input::-webkit-scrollbar {
+    width: 10px; 
+}
+
+.output-message::-webkit-scrollbar-thumb,
+.input::-webkit-scrollbar-thumb {
+    background-color: #00FF00; 
+    border-radius: 5px; 
+}
+
+.output-message::-webkit-scrollbar-track,
+.input::-webkit-scrollbar-track {
+    background-color: #319854; 
+    border-radius: 5px; 
+}
+
+.encryptor-container__alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 470px;
+}
+
+.text-alert{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--green);
+    background: black;
+}
+
+.encryptor-container__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 45px;
+    position: absolute;
+    top: 510px;
+}
+
+.encrypt-button{
+    width: 300px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA-buttons);
+}
+
+.encrypt-button:active{
+    box-shadow: inset 2px 2px 4px var(--white),
+    inset -3px -4px 8px var(--dark-green);
+    color: var(--white);
+}
+
+.decrypt-button{
+    width: 300px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--dark-green);
+    background: var(--greey);
+    border: 1px solid var(--dark-green);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA-buttons);
+}
+
+.copy-button:active,
+.decrypt-button:active{
+    box-shadow: inset 2px 2px 4px var(--dark-green),
+    inset -3px -4px 8px var(--white);
+    color: var(--dark-green);
+}
+
+.result-container{
+    width: 270px;
+    height: 580px;
+    background-color: var(--black);
+    box-shadow: 10px 24px 32px -8px var(--gray);
+    position: relative;
+    margin-top: 40px;
+    border: 1px solid var(--dark-green);
+    border-radius: 32px;
+    text-align: center;
+}
+
+.result-container__content{
+
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background-color: var(--black);
+}
+
+@keyframes luz-verde {
+    0% {
+      border-color: #3bff3b;
+    }
+    50% {
+      border-color: #98ffbc;
+    }
+    100% {
+      border-color: #5cff92;
+    }
+  }
+
+.rafaMan{
+    height: 200px;
+    width: 200px;
+    border-radius: 16px;
+    margin: 0 auto;
+    border: 5px groove var(--green);
+    animation: luz-verde 1s infinite linear;
+    pointer-events: none; 
+}
+
+.first-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--green);
+}
+
+.second-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--green);
+}
+
+.output-message{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--dark-green);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.output-message:focus{
+    outline: none;
+}
+
+.copy-button{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden; /*deixa o botao invisivel*/
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--dark-green);
+    background: var(--greey);
+    border: 1px solid var(--dark-green);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.encrypt-button:hover,
+.decrypt-button:hover,
+.copy-button:hover{
+    transform: scale(1.04, 1.04);
+}
+
+/* footer */
+
+.footer-container {
+    top: 15px;
+    width: 100%;
+    padding: 20px;
+    border-top: 2px solid var(--dark-green);
+    color: var(--dark-green);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--black);
+}
+
+.linkedin:hover,
+.github:hover{
+    color: white;
+    opacity: 0.6;
+}
+
+/* Criando efeito de vibração para a mensagem aviso */
+
+.text-alert.vibrar {
+    animation: vibrar 0.2s linear infinite;
+  }
+  
+  @keyframes vibrar {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(2px);
+    }
+    50% {
+      transform: translateX(-2px);
+    }
+    75% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }  

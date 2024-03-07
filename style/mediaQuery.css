@@ -1,0 +1,100 @@
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 200px;
+    }
+
+    .encryptor-container{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encryptor-container__buttons{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encryptor-container__alert{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .result-container{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .result-container__content{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .rafaMan{
+        display: none;
+        height: 100px;
+        width: 200px;
+    }
+
+    .copy-button{
+        position: inherit;
+        width: 100%;
+    }
+
+    .output-message{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media(max-width: 720px){
+    body {
+        position: relative;
+        margin: 0;
+        padding-bottom: 20px;
+        height: 100vh;
+        width: 100vw;
+        overflow: auto
+    }
+
+    header .logo{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .input{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .encryptor-container__buttons{
+        display: grid;
+        gap: 21px;
+    }
+
+     .result-container{
+        width: 90%;
+    }
+
+    .footer-text{
+        font-size: 20px;
+    }
+}
