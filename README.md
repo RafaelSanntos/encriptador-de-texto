@@ -54,34 +54,31 @@
 
 ### Desktop:
 <div style="text-align: center;">
-  <video loop muted autoplay playsinline>
-    <source src="./.github/desktop-design.mp4" type="video/mp4">
-  </video>
+  <img src="./.github/desktop-design.gif" alt="Alt Text">
 </div>
 
 ### Tablet:
 
 <div style="text-align: center;">
-  <video loop muted autoplay playsinline>
-    <source src="./.github/tablet.design.mp4" type="video/mp4">
-  </video>
+  <img src="./.github/tablet.design.gif" alt="Alt Text">
 </div>
 
 ### Mobile:
 
 <div style="text-align: center;">
-  <video loop muted autoplay playsinline>
-    <source src="./.github/mobile-desing.mp4" type="video/mp4">
-  </video>
+  <img src="./.github/mobile-desing.gif" alt="Alt Text">
 </div>
 
 ## 🔠 Funcionalidades e requisitos
 
 <div style="text-align: center;">
-  <video loop muted autoplay playsinline>
-    <source src="./.github/testing-the-features.mp4" type="video/mp4">
-  </video>
+  <img src="./.github/testing-the-features.gif" alt="Alt Text">
 </div>
+
+> - Palavras com letras minúsculas sem acento ➡️ ocorre a criptografia ou descriptografia normalmente. ✅
+> - Palavras com letras maiscúlas ➡️ alerta: Apenas letras minúsculas sem acento! ❌
+> - Palavras com letras minúsculas mas com acento ➡️ alerta: Não deve ter acentos, caracteres especiais ou números! ❌
+> - Apenas caracteres especiais ou números ➡️ alerta: Não deve ter acentos, caracteres especiais ou números! ❌
 
 ## 👨🏻‍💻Autor:
 ### Rafael Santos
