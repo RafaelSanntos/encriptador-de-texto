@@ -1,16 +1,14 @@
 <h1 align="center">Challenge ONE Sprint 01 - Turma 6</h1>
 
-<div align="center" style="display: flex; align-items: center; justify-content: center;">
-    <img widt="30%" src="./.github/one.png" alt="Imagem do programa ONE - Oracle Next Education">
-    <img width="30%" src="./.github/badge.png" alt="Imagem da primeira badge do programa ONE - Oracle Next Education">
-</div>
+<div align="center"><img src="./.github/logo-aluralatam-oracle.svg" width="200"/></div>
+<div align="center"><img src="./.github/logo-one.png" width="100"/></div>
 
 <p>
     O objetivo desse Challenge era desenvolver um decodificador de texto utilizando HTML, CSS e Javascript, onde pudesse criptografar um texto e depois descriptografar para o texto original.
 </p>
 
 ## Tecnologias usadas:
-<div style="text-align: center;">
+<div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
@@ -43,9 +41,9 @@
 > - O resultado deve ser exibido na tela.
 
 ## 🔠 Design do Decodificador proposto pelo Challenge
-<p align="center" >
+<div align="center">
     <img src="./.github/layout-challenge.jpg" alt="Layout do Challenge Decodificador de Texto">
-</p>
+</div>
 <p>
     Modelo disponibilizado no Figma, utilizado apenas para fins de inspiração não sendo obrigatorio seguir o mesmo desing.
 </p>
@@ -53,25 +51,26 @@
 ## 🔠 Desing criado por mim
 
 ### Desktop:
-<div style="text-align: center;">
+<div align="center">
   <img src="./.github/desktop-design.gif" alt="Alt Text">
 </div>
 
 ### Tablet:
 
-<div style="text-align: center;">
+<div align="center">
   <img src="./.github/tablet.design.gif" alt="Alt Text">
 </div>
 
+
 ### Mobile:
 
-<div style="text-align: center;">
+<div align="center">
   <img src="./.github/mobile-desing.gif" alt="Alt Text">
 </div>
 
 ## 🔠 Funcionalidades e requisitos
 
-<div style="text-align: center;">
+<div align="center">
   <img src="./.github/testing-the-features.gif" alt="Alt Text">
 </div>
 
